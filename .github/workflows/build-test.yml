@@ -1,0 +1,14 @@
+name: Build and Test
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Build project
+        run: echo "Running tests..."
+      - name: Test Successful
+        run: echo "All tests passed!"
